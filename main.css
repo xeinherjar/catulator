@@ -1,0 +1,23 @@
+body {
+  background-color: gray; }
+
+img {
+  margin-left: 5%; }
+
+h3 {
+  margin-left: 5%;
+  text-transform: uppercase;
+  color: white; }
+
+input[type=text], input[type=submit] {
+  margin-left: 5%; }
+
+.answer {
+  background-color: lightgray;
+  height: 2em;
+  font-size: 32px;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 0 5% 5% 5%; }
+
+/*# sourceMappingURL=main.css.map */
