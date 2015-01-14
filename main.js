@@ -3,10 +3,28 @@ var num_one      = document.getElementById('num_one'),
     calculateBtn = document.getElementById('calculateBtn'),
     answer       = document.getElementById('answer');
 
+
+
+function createButton(name, operator) {
+  var elem = document.createElement('input');
+  elem.type = 'submit';
+  elem.calculate = operator;
+  return elem;
+};
+
+var add_btn = createButton('Add', '+');
+var sub_btn = createButton('Substract', '-');
+var mul_btn = createButton('Multiply', '*');
+var sub_btn = createButton('Divide', '/');
+
+
+
+
+
 calculateBtn.onclick = function() {
   var result; 
-  op1 = parseInt(num_one.value, 10);
-  op2 = parseInt(num_two.value, 10);
+  op1 = parseFloat(num_one.value);
+  op2 = parseFloat(num_two.value);
 
   result = op1 + op2;
   answer.innerHTML = result;
