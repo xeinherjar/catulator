@@ -10,33 +10,42 @@ img {
   border: 1px solid black; }
 
 .buttons {
-  font-size: 12px;
+  font-size: 48px;
   text-align: center; }
 
 .numbers {
   float: left;
   width: 75%;
-  color: blue;
-  background-color: #fff; }
+  color: #FF4C4C;
+  background-color: #7F0000; }
   .numbers > div {
     width: 33%;
     float: left; }
     .numbers > div:last-child {
       float: none;
+      clear: both;
       margin: 0 auto; }
     .numbers > div:hover {
-      background-color: #000; }
+      background-color: #CC0000; }
 
 .operations {
   float: right;
   width: 25%;
-  color: green;
-  background-color: #111; }
+  color: white;
+  background-color: #7F2626; }
+  .operations > div:hover {
+    background-color: #CC0000; }
+
+#eq {
+  background-color: #FF0000;
+  color: white; }
 
 .top {
   background-color: white;
   color: black;
   height: 48px;
-  width: 0 auto; }
+  border-bottom: 1px solid black;
+  text-align: right;
+  font-size: 48px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,9 @@
 var result = document.getElementById('result');
 var num_btns = document.getElementsByClassName('num');
 var op_btns  = document.getElementsByClassName('op');
-var clear = false,
+var eq       = document.getElementById('eq');
+var clear = true,
+    op    = null,
     total = 0;
 
 result.innerHTML = 0;
@@ -16,7 +18,7 @@ var ops = {
 for (var i = 0; i < num_btns.length; i++) {
   var value = num_btns[i].id; 
   num_btns[i].onclick = function(value) { 
-    if (result.innerHTML === "0" || clear) {
+    if (clear) {
       result.innerHTML = "";
     }
     result.innerHTML += value.target.id; 
@@ -25,7 +27,7 @@ for (var i = 0; i < num_btns.length; i++) {
 }
 
 for (var i = 0; i < op_btns.length; i++) {
-  var op = op_btns[i].id;
+  op = op_btns[i].id;
   op_btns[i].onclick = function(op) {
     op = op.target.id;
     total = ops[op](total, parseFloat(result.innerHTML));
@@ -33,3 +35,8 @@ for (var i = 0; i < op_btns.length; i++) {
     clear = true;
   };
 }
+
+eq.onclick = function() {
+  total = ops[op](total, parseFloat(result.innerHTML));
+  result.innerHTML = total;
+};

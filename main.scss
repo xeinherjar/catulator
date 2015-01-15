@@ -1,5 +1,5 @@
-$number-color: blue;
-$op-color: green;
+$number-color: #FF4C4C;
+$op-color: white;
 
 body {
   background-color: gray;
@@ -16,7 +16,7 @@ img {
 }
 
 .buttons {
-  font-size: 12px;
+  font-size: 48px;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@ img {
   float: left;
   width: 75%;
   color: $number-color;
-  background-color: #fff;
+  background-color: #7F0000;
 
   > div {
     width: 33%;
@@ -32,11 +32,12 @@ img {
     
     &:last-child {
       float: none;
+      clear: both;
       margin: 0 auto;
     }
 
     &:hover {
-      background-color: #000;
+      background-color: #CC0000;
     }
   }
 }
@@ -45,14 +46,26 @@ img {
   float: right;
   width: 25%;
   color: $op-color;
-  background-color: #111;
+  background-color: #7F2626;
+
+  > div {
+    &:hover {
+      background-color: #CC0000;
+    }
+  }
+
 }
 
-
+#eq {
+  background-color: #FF0000;
+  color: white;
+}
 
 .top {
   background-color: white;
   color: black;
   height: 48px;
-  width: 0 auto;
+  border-bottom: 1px solid black;
+  text-align: right;
+  font-size: 48px;
 }
