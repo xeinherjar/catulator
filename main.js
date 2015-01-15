@@ -16,12 +16,12 @@ var ops = {
 };
 
 for (var i = 0; i < num_btns.length; i++) {
-  var value = num_btns[i].id; 
-  num_btns[i].onclick = function(value) { 
+  var value = num_btns[i].id;
+  num_btns[i].onclick = function(value) {
     if (clear) {
       result.innerHTML = "";
     }
-    result.innerHTML += value.target.id; 
+    result.innerHTML += value.target.id;
     clear = false;
   };
 }

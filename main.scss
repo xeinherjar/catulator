@@ -59,6 +59,10 @@ img {
 #eq {
   background-color: #FF0000;
   color: white;
+
+  &:hover {
+    background-color: #FF4C4C;
+  }
 }
 
 .top {
