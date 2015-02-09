@@ -1,4 +1,6 @@
-Final calculator, bonus2.
-Some things are wonky...
+## Homework 006
+A calculator built in JavaScript.
 
-Many branches.
+SASS used for CSS.
+
+License: MIT
